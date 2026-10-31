@@ -28,6 +28,8 @@ Read back through every message in the current thread before asking anything. Th
 - Corrections the user already made, and whether they were fully absorbed.
 - Defaults Claude has quietly chosen without checking.
 - Points where two things the user said do not fully reconcile.
+- Several ideas packed into one message. Separate them and check which one is the task.
+- Steps the user jumped over while thinking ahead. Name the gap instead of filling it with a guess.
 
 Open the check-in with one or two lines restating your current understanding of the goal. This lets the user catch misalignment they did not think to raise. Keep it short. Do not turn it into a summary of the whole thread.
 
