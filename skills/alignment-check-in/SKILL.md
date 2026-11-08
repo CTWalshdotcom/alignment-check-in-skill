@@ -1,6 +1,6 @@
 ---
 name: alignment-check-in
-description: "Run a user-triggered alignment check-in that pauses the current task, reviews the whole conversation so far, and surfaces every open question, unstated assumption, knowledge gap, ambiguity, or possible misalignment Claude is carrying, then resolves them with the user through the environment's Q&A tool before continuing. Use this whenever the user wants to confirm you and they are fully aligned before you proceed - triggers include 'check in', 'alignment check', 'are we aligned', 'are we on the same page', 'any questions before you continue', 'what do you need from me before starting', 'surface your assumptions', 'anything unclear', 'sync up', or any request to confirm shared understanding mid-task. Works in chat, Claude Cowork, and Claude Code. This is a mid-task sync, distinct from end-of-session audits, conversation handovers, or folder context setup - reach for it when the goal is to eliminate misunderstanding before doing more work."
+description: "Run a user-triggered alignment check-in that pauses the current task, reviews the whole conversation so far, and surfaces every open question, unstated assumption, knowledge gap, ambiguity, or possible misalignment Claude is carrying, then resolves them with the user through the environment's Q&A tool before continuing. Use this whenever the user wants to confirm you and they are fully aligned before you proceed - triggers include 'check in', 'alignment check', 'are we aligned', 'are we on the same page', 'any questions before you continue', 'what do you need from me before starting', 'surface your assumptions', 'anything unclear', 'sync up', or any request to confirm shared understanding mid-task, and unasked before reworking his own material 'from scratch'. This is a mid-task sync, distinct from end-of-session audits, conversation handovers, or folder context setup - reach for it when the goal is to eliminate misunderstanding before doing more work."
 ---
 
 # Alignment check-in
@@ -9,7 +9,7 @@ A user-triggered pause that surfaces everything Claude is unsure about, guessing
 
 ## When to use this
 
-The user invokes this deliberately, mid-task, when they want to be sure nothing is being misunderstood before Claude continues. It is not run autonomously and it is not an end-of-session sweep. It runs forward: resolve the ambiguity now, then proceed.
+The user invokes this deliberately, mid-task, when they want to be sure nothing is being misunderstood before Claude continues. One exception runs it without being asked: when Conor asks Claude to improve, rework or redo his own material "from scratch", run this check-in before any work starts, to confirm the approach is his (Conor, 8 November 2026; the rule is in `deliverable-standards`, `references/his-wording.md`). Otherwise it is not run autonomously, and it is not an end-of-session sweep. It runs forward: resolve the ambiguity now, then proceed.
 
 ## How it works
 
